@@ -89,6 +89,16 @@ a:active {
 }
 
 /* heroSection*/
+@keyrframes dropIn {
+    0% {
+        transform: translateY(-100ox);
+        opacity: 0;
+    }
+    1000 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .hero {
     top: 0;
     left: 0;
@@ -124,6 +134,7 @@ a:active {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 12rem;
     margin-bottom: 5px;
+    
 }
 .hero p {
     font-family: 'Roboto', sans-serif;;
