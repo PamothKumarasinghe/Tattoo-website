@@ -31,6 +31,9 @@ a:active {
     align-items: center;
     z-index: 10; /* make sure it's above the hero background */
     padding: 10px 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 7.5s;
+    animation-fill-mode: both;
 
 
 
@@ -99,10 +102,38 @@ a:active {
         opacity: 1;
     }
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes leftSlide {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes rightSlide {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .hero {
     top: 0;
     left: 0;
-    background-image: url("https://raw.githubusercontent.com/PamothKumarasinghe/Tattoo-website/refs/heads/main/homePage.jpeg?token=GHSAT0AAAAAAC7II4AS5TVOLHB6BK52P26Y2A5PXDQ");
+    background-image: url("homePage.jpeg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -134,13 +165,19 @@ a:active {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 12rem;
     margin-bottom: 5px;
-    
+    animation: dropIn 2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    /* animation: fadeIn 5s ease-out; */
 }
 .hero p {
     font-family: 'Roboto', sans-serif;;
     font-size: 1.0rem;
     max-width: 920px;
-    margin: -10px auto;
+    margin: 0 auto;
+    display: inline-block;
+    animation: leftSlide 1.5s ease-in;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    
 }
 .heroSocial {
     margin-top: 20px;
@@ -155,6 +192,9 @@ a:active {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    animation: rightSlide 1.5s ease-in;
+    animation-delay: 5.5s;
+    animation-fill-mode: both;
 }
 .heroSocial a {
     color: #fff;
