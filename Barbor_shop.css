@@ -89,12 +89,12 @@ a:active {
 }
 
 /* heroSection*/
-@keyrframes dropIn {
+@keyframes dropIn {
     0% {
-        transform: translateY(-100ox);
+        transform: translateY(-100px);
         opacity: 0;
     }
-    1000 {
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
@@ -102,7 +102,7 @@ a:active {
 .hero {
     top: 0;
     left: 0;
-    background-image: url("https://raw.githubusercontent.com/PamothKumarasinghe/Tattoo-website/refs/heads/main/homePage.jpeg?token=GHSAT0AAAAAAC7II4ASG2WN2MNIJAOATQYS2A46SGA");
+    background-image: url("https://raw.githubusercontent.com/PamothKumarasinghe/Tattoo-website/refs/heads/main/homePage.jpeg?token=GHSAT0AAAAAAC7II4AS5TVOLHB6BK52P26Y2A5PXDQ");
     background-size: cover;
     background-position: center;
     height: 100vh;
